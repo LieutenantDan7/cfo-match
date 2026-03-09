@@ -1,0 +1,80 @@
+name: Provider Interest
+description: Apply to become a CFO Match beta provider partner
+title: "Provider interest: <firm name>"
+labels: [provider-interest]
+body:
+  - type: input
+    id: firm_name
+    attributes:
+      label: Firm name
+      placeholder: Example CFO Partners
+    validations:
+      required: true
+  - type: input
+    id: contact_name
+    attributes:
+      label: Contact name
+      placeholder: Jane Smith
+    validations:
+      required: true
+  - type: input
+    id: contact_email
+    attributes:
+      label: Contact email
+      placeholder: jane@firm.com
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Website
+      placeholder: https://firm.com
+    validations:
+      required: true
+  - type: textarea
+    id: services
+    attributes:
+      label: Core service lines
+      placeholder: Fractional CFO, controller, FP&A, outsourced accounting, etc.
+    validations:
+      required: true
+  - type: input
+    id: ideal_client
+    attributes:
+      label: Ideal client size / revenue band
+      placeholder: $2M-$20M SMBs
+  - type: input
+    id: industries
+    attributes:
+      label: Industry focus
+      placeholder: SaaS, ecommerce, healthcare, agencies, general SMB
+  - type: input
+    id: geography
+    attributes:
+      label: Geography served
+      placeholder: US remote, Texas, nationwide, etc.
+  - type: input
+    id: engagement_floor
+    attributes:
+      label: Minimum engagement size or budget floor
+      placeholder: $3k/month minimum
+  - type: textarea
+    id: lead_types
+    attributes:
+      label: Preferred lead types
+      placeholder: Early-stage SaaS, cash-flow cleanup, fundraising prep, etc.
+  - type: input
+    id: monthly_capacity
+    attributes:
+      label: Monthly capacity
+      placeholder: 3-5 new clients
+  - type: input
+    id: intro_method
+    attributes:
+      label: Preferred intro method
+      placeholder: Email intro, warm handoff, calendar link, etc.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else we should know?
+      placeholder: Share anything that helps us match you well.

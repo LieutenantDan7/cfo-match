@@ -1,0 +1,101 @@
+name: Buyer Intake
+description: Request a match with a fractional CFO or outsourced finance provider
+title: "Buyer lead: <company name>"
+labels: [buyer-lead]
+body:
+  - type: input
+    id: full_name
+    attributes:
+      label: Full name
+      placeholder: Jane Smith
+    validations:
+      required: true
+  - type: input
+    id: work_email
+    attributes:
+      label: Work email
+      placeholder: jane@company.com
+    validations:
+      required: true
+  - type: input
+    id: company_name
+    attributes:
+      label: Company name
+      placeholder: Acme Co
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Website
+      placeholder: https://company.com
+  - type: dropdown
+    id: revenue_range
+    attributes:
+      label: Revenue range
+      options:
+        - Under $1M
+        - $1M-$5M
+        - $5M-$10M
+        - $10M-$20M
+        - $20M+
+    validations:
+      required: true
+  - type: input
+    id: industry
+    attributes:
+      label: Industry
+      placeholder: SaaS, ecommerce, agency, healthcare, etc.
+    validations:
+      required: true
+  - type: input
+    id: team_size
+    attributes:
+      label: Team size
+      placeholder: 12
+  - type: checkboxes
+    id: help_needed
+    attributes:
+      label: What do you need help with?
+      options:
+        - label: Cash flow
+        - label: Forecasting
+        - label: Budgeting
+        - label: KPI reporting
+        - label: Profitability analysis
+        - label: Fundraising prep
+        - label: Board reporting
+        - label: Hiring finance leadership
+        - label: General strategic finance help
+  - type: dropdown
+    id: service_type
+    attributes:
+      label: What type of help do you need?
+      options:
+        - Fractional CFO
+        - Controller
+        - Outsourced finance team
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: monthly_budget
+    attributes:
+      label: Monthly budget range
+      placeholder: $3k-$6k
+  - type: dropdown
+    id: timeline
+    attributes:
+      label: Timeline
+      options:
+        - ASAP
+        - This month
+        - Next 90 days
+        - Researching
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else we should know?
+      placeholder: Tell us about your goals or current finance issues.
