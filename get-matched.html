@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Matched | CFO Match</title>
+  <meta name="description" content="Tell CFO Match about your business and finance needs so we can match you with the right fractional CFO or outsourced finance partner." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">CFO Match</a>
+      <a href="index.html#how-it-works" class="button button-small button-secondary">How it works</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section form-hero">
+      <div class="container form-shell">
+        <div class="form-intro">
+          <p class="eyebrow">Lead qualification</p>
+          <h1>Tell us about your business</h1>
+          <p class="hero-copy">Share a few details and CFO Match can route you toward the right fractional CFO, controller, or outsourced finance team.</p>
+          <div class="form-notes">
+            <div class="info-card">
+              <h2>What we’ll use this for</h2>
+              <ul class="feature-list">
+                <li>Understand your company stage and revenue range</li>
+                <li>See what kind of finance support you need</li>
+                <li>Prioritize matches based on budget and timeline</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <section class="lead-form-card" aria-labelledby="lead-form-heading">
+          <div class="section-heading form-heading">
+            <p class="eyebrow">Get matched</p>
+            <h2 id="lead-form-heading">Lead qualification form</h2>
+            <p>Static MVP form for collecting buyer details. Hook it up to a backend later.</p>
+          </div>
+
+          <form class="lead-form" action="#" method="post">
+            <div class="form-grid">
+              <label>
+                <span>Full name</span>
+                <input type="text" name="full_name" autocomplete="name" required />
+              </label>
+
+              <label>
+                <span>Work email</span>
+                <input type="email" name="work_email" autocomplete="email" required />
+              </label>
+
+              <label>
+                <span>Company name</span>
+                <input type="text" name="company_name" autocomplete="organization" required />
+              </label>
+
+              <label>
+                <span>Website</span>
+                <input type="url" name="website" placeholder="https://" />
+              </label>
+
+              <label>
+                <span>Revenue range</span>
+                <select name="revenue_range" required>
+                  <option value="">Select revenue range</option>
+                  <option>Under $1M</option>
+                  <option>$1M-$5M</option>
+                  <option>$5M-$10M</option>
+                  <option>$10M-$20M</option>
+                  <option>$20M+</option>
+                </select>
+              </label>
+
+              <label>
+                <span>Industry</span>
+                <input type="text" name="industry" required />
+              </label>
+
+              <label>
+                <span>Team size</span>
+                <input type="text" name="team_size" placeholder="e.g. 12 employees" required />
+              </label>
+
+              <fieldset>
+                <legend>What do you need help with?</legend>
+                <div class="checkbox-grid">
+                  <label><input type="checkbox" name="help_with" value="Cash flow" /> <span>Cash flow</span></label>
+                  <label><input type="checkbox" name="help_with" value="Forecasting" /> <span>Forecasting</span></label>
+                  <label><input type="checkbox" name="help_with" value="Budgeting" /> <span>Budgeting</span></label>
+                  <label><input type="checkbox" name="help_with" value="KPI reporting" /> <span>KPI reporting</span></label>
+                  <label><input type="checkbox" name="help_with" value="Profitability analysis" /> <span>Profitability analysis</span></label>
+                  <label><input type="checkbox" name="help_with" value="Fundraising prep" /> <span>Fundraising prep</span></label>
+                  <label><input type="checkbox" name="help_with" value="Board reporting" /> <span>Board reporting</span></label>
+                  <label><input type="checkbox" name="help_with" value="Hiring finance leadership" /> <span>Hiring finance leadership</span></label>
+                  <label><input type="checkbox" name="help_with" value="General strategic finance help" /> <span>General strategic finance help</span></label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Do you need</legend>
+                <div class="checkbox-grid checkbox-grid-two">
+                  <label><input type="checkbox" name="service_need" value="Fractional CFO" /> <span>Fractional CFO</span></label>
+                  <label><input type="checkbox" name="service_need" value="Controller" /> <span>Controller</span></label>
+                  <label><input type="checkbox" name="service_need" value="Outsourced finance team" /> <span>Outsourced finance team</span></label>
+                  <label><input type="checkbox" name="service_need" value="Not sure" /> <span>Not sure</span></label>
+                </div>
+              </fieldset>
+
+              <label>
+                <span>Monthly budget range</span>
+                <input type="text" name="monthly_budget_range" placeholder="e.g. $3k-$6k / month" required />
+              </label>
+
+              <label>
+                <span>Timeline</span>
+                <select name="timeline" required>
+                  <option value="">Select timeline</option>
+                  <option>ASAP</option>
+                  <option>This month</option>
+                  <option>Next 90 days</option>
+                  <option>Researching</option>
+                </select>
+              </label>
+
+              <label class="full-width">
+                <span>Anything else we should know?</span>
+                <textarea name="anything_else" rows="5" placeholder="Share context, goals, pain points, or what a great match would look like."></textarea>
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="button">Submit details</button>
+              <p class="form-helper">For this MVP, the form is static and ready for a backend or embed later.</p>
+            </div>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
